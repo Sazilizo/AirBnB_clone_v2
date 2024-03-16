@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 
+
 """
 starts flask web app and listens on port 0.0.0.0 and 5000
-/c/<text>: display “C ” followed by the value of the text variable (replace underscore _ symbols with a space )
-/python/<text>: display “Python ”, followed by the value of the text variable (replace underscore _ symbols with a space )
-The default value of text is “is cool"
+/c/<text>: display “C ” followed by the value of the text variable
 """
 
 
@@ -22,6 +21,7 @@ def Index():
 def hbnb():
     """Prints HBNB!"""
     return 'HBNB'
+
 
 @app.route('/c/<text>', strict_slashes=False)
 def cisfun(text):
